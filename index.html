@@ -2,40 +2,144 @@
 <html class="no-js" lang="">
 
 <head>
-  <meta charset="utf-8">
-  <title></title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <meta property="og:title" content="">
-  <meta property="og:type" content="">
-  <meta property="og:url" content="">
-  <meta property="og:image" content="">
+    <meta property="og:title" content="">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
 
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
-  <!-- Place favicon.ico in the root directory -->
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="icon.png">
+    <!-- Place favicon.ico in the root directory -->
 
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/css_all_fonts.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald&family=PT+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/vendor/modernizr-3.11.2.min.js"></script>
 
-  <meta name="theme-color" content="#fafafa">
+    <meta name="theme-color" content="#fafafa">
 </head>
 
 <body>
+    <header class="site-header">
+        <div class="hero">
+            <div class="contenido-header">
+                <nav class="redes-sociales">
+                    <a href="#"><i class="fab fa-facebook-square"></i></a>
+                    <a href="#"><i class="fab fa-twitter-square"></i></a>
+                    <a href="#"><i class="fab fa-pinterest-square"></i></a>
+                    <a href="#"><i class="fab fa-youtube-square"></i></a>
+                    <a href="#"><i class="fab fa-instagram-square"></i></a>
+                </nav>
+                <div class="informacion-evento">
+                    <div class="clearfix">
+                        <p class="fecha"><i class="fas fa-calendar-alt"></i> 2-3 Sep</p>
+                        <p class="ciudad"><i class="fas fa-map-marker-alt"></i> Guadalajara, MX</p>
+                    </div>
+                    <h1 class="nombre-sitio">GldWebCamp</h1>
+                    <p class="slogan">La mejor conferencia de <span>diseño web</span></p>
 
-  <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
-  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
+                </div>
 
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-  <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
-  </script>
-  <script src="https://www.google-analytics.com/analytics.js" async></script>
+
+            </div>
+        </div>
+        <!--Div Hero-->
+    </header>
+
+    <div class="barra">
+        <div class="contenedor clearfix">
+            <div class="logo">
+                <img src="img/logo.svg" alt="logo gdlwebcamp">
+            </div>
+            <div class="menu-movil">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <nav class="navegacion-principal clearfix">
+                <a href="#">Conferencia</a>
+                <a href="#">Calendario</a>
+                <a href="#">Invitados</a>
+                <a href="#">Reservaciones</a>
+            </nav>
+        </div>
+        <!--Contenedor-->
+    </div>
+    <!--Barra-->>
+
+    <section class="seccion contenedor">
+        <h2>La mejor conferencia de diseño web en español</h2>
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam nesciunt laboriosam natus distinctio aperiam voluptatem maxime tenetur molestias ipsa obcaecati voluptatibus deserunt eos ea mollitia praesentium, aliquid odio consequatur repudiandae.
+        </p>
+    </section>
+    <!--Seccion-->
+
+    <section class="programa">
+        <div class="contenedor-video">
+            <video autoplay loop poster="bg-talleres.jpg">
+              <source src="videos/video.mp4" type="video/mp4">
+              <source src="videos/video.webm" type="video/webm">
+              <source src="videos/video.ogv" type="video/ogv">
+            </video>
+        </div>
+        <!--contenedor video-->
+
+        <div class="contenido-programa">
+            <div class="contenedor">
+                <div class="programa-evento">
+                    <h2>Programa del evento</h2>
+                    <nav class="menu-programa">
+                        <a href="#talleres"><i class="fas fa-code" aria-hidden="true"></i> Talleres</a>
+                        <a href="#conferencias"><i class="fas fa-comment" aria-hidden="true"></i> Conferencias</a>
+                        <a href="#seminarios"><i class="fas fa-university" aria-hidden="true"></i> Seminarios</a>
+                    </nav>
+                    <div id="tallers" class="info-curso ocultar clearfix">
+                        <div class="detalle-evento">
+                            <h3>HTML5, CSS3 y Javascript</h3>
+                            <p><i class="fas fa-clock" aria-hidden="true"></i> 15:00 hrs</p>
+                            <p><i class="fas fa-calendar" aria-hidden="true"></i> 10 de Ago</p>
+                            <p><i class="fas fa-user" aria-hidden="true"></i> Jesus Daniel Camberos Perez</p>
+                        </div>
+
+                        <div class="detalle-evento">
+                            <h3>Responsive Web Design</h3>
+                            <p><i class="fas fa-clock" aria-hidden="true"></i> 20:00 hrs</p>
+                            <p><i class="fas fa-calendar" aria-hidden="true"></i> 10 de Ago</p>
+                            <p><i class="fas fa-user" aria-hidden="true"></i> Jesus Daniel Camberos Perez</p>
+                        </div>
+                        <a href="#" class="button float-right">Ver Todos</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--programa-->
+
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+    <script>
+        window.ga = function() {
+            ga.q.push(arguments)
+        };
+        ga.q = [];
+        ga.l = +new Date;
+        ga('create', 'UA-XXXXX-Y', 'auto');
+        ga('set', 'anonymizeIp', true);
+        ga('set', 'transport', 'beacon');
+        ga('send', 'pageview')
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async></script>
 </body>
 
 </html>
