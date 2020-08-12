@@ -172,6 +172,21 @@ h3 {
     margin-top: 50px;
     display: inline-block;
     transition: all .3s ease;
+    border: 2px solid;
+}
+
+.button.hollow,
+.button.hollow:hover {
+    background-color: white;
+    color: #fe4918;
+}
+
+.button.transparente {
+    background-color: transparent;
+}
+
+.button.transparente:hover {
+    border: 2px solid #fe4918;
 }
 
 .button:hover {
@@ -600,7 +615,282 @@ p.numero {
     font-size: 4em;
     display: block;
     margin: 0 0 10px 0;
+    font-family: "Oswald", sans-serif;
 }
+
+
+/**Tabla de precios**/
+
+ul.lista-precios>li {
+    padding: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+    ul.lista-precios>li {
+        float: left;
+        width: 33.3%;
+    }
+}
+
+div.tabla-precio {
+    border: 1px solid #e1e1e1;
+    background-color: #ffffff;
+    padding: 40px 0;
+    text-align: center;
+    transition: all .4s ease;
+}
+
+div.tabla-precio:hover {
+    transform: scale(1.1);
+    border: 1px solid #fe4918;
+    box-shadow: 0px 0px 50px #666;
+}
+
+div.tabla-precio ul li {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 14px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: #636363;
+    line-height: 26px;
+}
+
+
+/**Clase para agregar el icnono de la palomita verde**/
+
+.fas {
+    color: green;
+    padding-right: 10px;
+}
+
+div.tabla-precio h3 {
+    font-family: "Oswald", sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+div.tabla-precio p.numero {
+    color: #000000;
+    margin: 20px 0;
+}
+
+
+/**Mapa**/
+
+div.mapa {
+    height: 420px;
+    background-color: green;
+}
+
+
+/**Testimoniales**/
+
+div.testimoniales {
+    padding-bottom: 10px;
+}
+
+div.testimonial {
+    padding: 5px;
+}
+
+@media only screen and (min-width: 768px) {
+    div.testimonial {
+        float: left;
+        width: 33%;
+    }
+}
+
+
+/**Blockquote**/
+
+blockquote {
+    background-color: #ffffff;
+    border: 1px solid #e1e1e1;
+    position: relative;
+    margin: 0 0 10px 0;
+    padding-bottom: 20px;
+}
+
+blockquote p {
+    text-align: justify!important;
+    font-size: .9em!important;
+    font-family: 'PT Sans', sans-serif;
+    padding: 0 20px 0 65px;
+}
+
+.icon-testimonial {
+    color: #e33000;
+    position: absolute;
+    left: 15px;
+    top: 8px;
+    font-size: 2em;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+
+footer.info-testimonial {
+    padding: 0;
+}
+
+footer.info-testimonial img {
+    float: left;
+    width: 20%;
+    border-radius: 50%;
+    margin-top: 90px;
+    margin-left: 20px;
+}
+
+footer.info-testimonial cite {
+    text-align: left;
+    color: #e33000;
+    text-transform: uppercase;
+    margin-top: 80px;
+    font-size: 12px;
+    padding-top: 20px;
+    width: 66.6%;
+    float: right;
+    font-weight: bold;
+    font-style: normal;
+}
+
+footer.info-testimonial cite span {
+    color: #000000;
+    display: block;
+    text-transform: none;
+    margin-top: 5px;
+}
+
+@media only screen and (min-width:768px) {
+    footer.info-testimonial img {
+        margin-top: 190px;
+    }
+    footer.info-testimonial cite {
+        margin-top: 175px;
+    }
+}
+
+@media only screen and (min-width:1024px) {
+    footer.info-testimonial img {
+        margin-top: 100px
+    }
+    footer.info-testimonial cite {
+        margin-top: 95px;
+    }
+}
+
+
+/**Newsletter**/
+
+div.newsletter {
+    position: relative;
+    height: auto;
+}
+
+div.newsletter::before {
+    background-image: url(../img/bg-newsletter.jpg);
+    content: "";
+}
+
+div.newsletter .contenido {
+    padding: 10px 0;
+    color: #ffffff;
+    text-align: center;
+    position: relative;
+}
+
+div.newsletter .contenido p {
+    margin-top: 100px;
+    margin-bottom: 0px;
+    font-size: 1.5em;
+    text-transform: lowercase;
+}
+
+div.newsletter .contenido h3 {
+    color: #ffffff;
+    text-transform: lowercase;
+    font-size: 7.2vw;
+    font-family: 'PT Sans', sans-serif;
+    margin: 0;
+}
+
+div.newsletter .button {
+    margin: 20px 0;
+}
+
+
+/**Cuenta regresiva**/
+
+div.cuenta-regresiva ul li {
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+    div.cuenta-regresiva ul li {
+        width: 25%;
+        float: left;
+    }
+}
+
+
+/**Footer**/
+
+footer.site-footer {
+    background-color: #353535;
+    padding-top: 40px;
+    margin-top: 20px;
+}
+
+footer .contenedor>div {
+    color: #ffffff;
+    padding: 0px 20px;
+    font-size: 12px;
+}
+
+@media only screen and (min-width: 768px) {
+    footer .contenedor>div {
+        float: left;
+        width: 33.3%;
+    }
+}
+
+footer h3 {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    margin-bottom: 20px;
+}
+
+footer h3 span {
+    color: #fe4918;
+}
+
+footer .ultimos-tweets li {
+    margin-bottom: 10px;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.footer-informacion p {
+    font-family: 'PT Sans', sans-serif;
+}
+
+footer nav.redes-sociales {
+    text-align: left;
+}
+
+p.copyright {
+    background-color: #2e2e2e;
+    color: #ffffff;
+    padding: 10px 0;
+    margin: 20px 0 0 0;
+    text-align: center;
+}
+
+
+/**Yo se lo di para corregir el error de la imagen**/
 
 
 /* ==========================================================================
