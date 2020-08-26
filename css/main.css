@@ -216,6 +216,57 @@ img {
 }
 
 
+/**Lettering**/
+
+h1.nombre-sitio span {
+    position: relative;
+    text-shadow: 0 0 30px black;
+}
+
+@media only screen and (min-width: 992px) {
+    .char1 {
+        top: 20px;
+        right: 20px;
+    }
+    .char2 {
+        top: 20px;
+        left: -20px;
+    }
+    .char3 {
+        top: 10px;
+        right: 20px;
+    }
+    .char4 {
+        top: 5px;
+        right: 10px;
+    }
+    .char5 {
+        top: 15px;
+        right: 10px;
+    }
+    .char6 {
+        top: 5px;
+        left: 10px;
+    }
+    .char7 {
+        top: 15px;
+        left: -5px;
+    }
+    .char8 {
+        top: 0;
+        left: 10px;
+    }
+    .char9 {
+        top: 10px;
+        right: 10px;
+    }
+    .char10 {
+        top: 15px;
+        left: -5px;
+    }
+}
+
+
 /**Header**/
 
 div.hero {
@@ -461,8 +512,6 @@ div.programa-evento {
 
 nav.menu-programa {
     width: 100%;
-    border-bottom: 1px solid #fe4918;
-    padding-bottom: 18px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -479,6 +528,24 @@ nav.menu-programa a {
     margin-bottom: 10px;
     font-family: 'Oswald', sans-serif;
     font-size: 1.2em;
+    position: relative;
+    padding-bottom: 18px;
+    border-bottom: 1px solid #fe4918;
+}
+
+nav.menu-programa a.activo::after {
+    position: absolute;
+    content: '';
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    height: 20px;
+    width: 30px;
+    background-image: url(../img/talleres-flecha.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    bottom: -20px;
 }
 
 @media only screen and (min-width: 768px) {
