@@ -1,21 +1,25 @@
 (function() {
     "use strict";
 
-
-
-
     document.addEventListener("DOMContentLoaded", function() {
 
-        var map = L.map('mapa').setView([32.50636, -116.924068], 16);
+        if (document.getElementById('mapa')) {
 
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-        }).addTo(map);
+            var map = L.map('mapa').setView([51.498591, -0.101109], 19);
 
-        L.marker([32.50636, -116.924068]).addTo(map)
-            .bindPopup('GLDWebCamp Boletos ya disponibles')
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+
+                attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+
+            }).addTo(map);
+
+            L.marker([51.5, -0.09]).addTo(map)
+
+            .bindPopup('GDLWebcamp 2018 <br> Boletos Disponibles')
+
             .openPopup();
 
+        }
 
         //Campos Datos usuario
         var nombre = document.getElementById('nombre');
@@ -34,10 +38,12 @@
         var resultado = document.getElementById('resultado');
         var suma_total = document.getElementById('suma_total');
 
-
         //Extras
         var camisa_evento = document.getElementById('camisa_evento');
         var etiquetas = document.getElementById('etiquetas');
+
+        //Para deshabiliar el boton de pagar sin antes presionar calcular
+        btnRegistro.disabled = true;
 
         if (document.getElementById('calcular')) {
 
@@ -119,7 +125,9 @@
                 }
                 suma_total.innerHTML = '$ ' + TotalPagar.toFixed(2);
 
-
+                //Habilitar el boton de registro una vez que se haya presionado el boton de calcular
+                btnRegistro.disabled = false;
+                document.getElementById("total_pedido").value = TotalPagar;
             }
 
             function mostrarDias() {
